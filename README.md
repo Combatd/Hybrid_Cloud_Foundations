@@ -48,3 +48,19 @@ When we refer to monolithic, we mean there is one, single source of every compon
 * It is run in a batch, or is constantly executed on a single instance of infrastructure.
 * To address performance issues and bottlenecks, it is necessary to scale up by increasing compute, storage, and memory resources. These resources are always constrained to a monolithic server’s capabilities.
 * The infrastructure is also monolithic. It is provided by a single vendor, who potentially also controls the application development tools, database, and operating system layers that are running on their hardware.
+
+### Application Design: Distributed Web Scale
+The Internet and open source software lowered application design costs and changed to being distributed over the network. The functionality became a separation of duties from being monolithic.
+
+Three-tier web application includes:
+
+* The web presentation-tier using JavaScript, HTML, and CSS
+* The application logic tier using programming languages such as: Java, C++, Python, or Ruby
+* A database cluster for persistence.
+
+Micro-service architecture with further separation of tier function allows application architecture to evolve towards network APIs based on the web, called RESTful APIs, or REST APIs.
+
+A customer request comes to a web load balancer.
+The web load balancer directs the request to any of the web presentation tier members, in this case Web4, to show a web page which needs to display application logic served through the AppServer Load Balancer from the Application Logic Tier members, in this case from AppServer2. AppServer2, in turn, reads data from the database cluster, in this case: the Database3 instance.
+
+Examples of these web-scale applications with a global reach are Facebook, Netflix, and Gmail.

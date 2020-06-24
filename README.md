@@ -95,3 +95,19 @@ One of the most important parts of the process is gathering detailed information
 Cloud Smart is about rationalizing applications, infrastructure, skills, and people across hybrid clouds and ensuring everything is where it fits best.
 
 You can leverage the essential characteristics of the cloud over various deployment models by looking at the cloud as an experience and a mindset. Since everything is on demand, it doesn’t take ten hours or six months to get a cloud result. Rapid elasticity with service measurements allows these organizations to understand how well they’re managing their on-prem and off-prem resources.
+
+### Legacy IT: The Mainframe
+The mainframe is monolithic architecture that first appeared on the computing landscape in the 1940s.
+
+There are several reasons for the mainframe’s continued popularity.
+
+* The enormous resources and computing power that is provides via its monolithic, converged architecture. It is, for example, 18 times faster than an x86 platform.
+* It also provides decades of uptime and provides high levels of security.
+* It also supports virtualization, which is an increasingly critical element of computing infrastructure today.
+
+Despite its many advantages, the mainframe isn’t the perfect solution for all computing needs.
+
+* Having access to the extensive amount of resources a mainframe provides requires a massive capital investment.
+* Mainframes only get more expensive when they need to scale, because their monolithic architectures require massive blocks to expand.
+* There’s also the concern of vendor lock-in, due to the use of proprietary hardware and software.
+* Finally, operating, managing, and maintaining such a complex piece of computing technology requires highly specialized skills.

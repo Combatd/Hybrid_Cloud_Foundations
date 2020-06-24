@@ -111,3 +111,17 @@ Despite its many advantages, the mainframe isn’t the perfect solution for all 
 * Mainframes only get more expensive when they need to scale, because their monolithic architectures require massive blocks to expand.
 * There’s also the concern of vendor lock-in, due to the use of proprietary hardware and software.
 * Finally, operating, managing, and maintaining such a complex piece of computing technology requires highly specialized skills.
+
+### Legacy of IT: Distributed Computing
+In the 80s, there was a need for departmental computing, which coincided with advances in memory, storage, software, LAN, and WAN technologies.
+
+Advantages
+* The low cost, making the barrier to entry very low. This was a dramatic change from the enormous investments required to stand up a mainframe.
+* By design, these systems were also easier to scale, making it much easier to expand an environment to meet growing needs. Most standards were open and because hardware and software were commoditized, businesses had a wealth of choices when making purchases.
+* Since these were commoditized systems, niche skills were no longer needed to operate and manage them.
+
+Disadvantages
+* Underutilization was the norm, which resulted in low return on investment, and high total cost of ownership.
+* Despite being scalable, these systems were not highly available, opening businesses to the risks of downtime and data loss.
+* The inherent scalability of the distributed systems also led to sprawl, which made them difficult to secure and manage.
+* Finally, because of the sheer number of components involved in different systems, IT organizations experienced sprawl as well, becoming disjointed and siloed.

@@ -25,3 +25,18 @@ The Hybrid Cloud Engineer helps organizations determine their readiness, and mak
 This is followed by ```implementation```.
 
 ```Implementation``` involves planning and executing migration. This involves a few things like refactoring applications for the best possible Total Cost of Ownership, or TCO, and Return On Investment, or ROI. Once complete, the technical and organizational infrastructure needs to be continuously monitored to check if performance expectations that were created in the SLAs are met.
+
+### Understanding the Cloud
+NIST defines cloud computing as "a model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources. For instance: networks, servers, storage, applications, and services that can be rapidly provisioned and released with minimal management effort or service provider interaction."
+
+* With Infrastructure as a Service, or IaaS, you are only managing the workloads and applications that are running on virtual machines and containers.
+
+* With Platform as a Service, or PaaS, you are only responsible for applications and their data.
+
+* Finally, with a Software as a Service, or SaaS, model, every aspect of the infrastructure is provided to you. The only thing that you are required to manage is the data. Everything else is being managed by a provider.
+
+Starting an organization's digital transformation:
+1. How do you leave traditional IT behind and become a Cloud consumer?
+2. How do you choose between application hosts? Infrastructure as a Service, Platform as a Service, or Software as a Service?
+3. How does your choice impact workload design, deployment, management, and costs?
+4. Can you leverage multiple models effectively?

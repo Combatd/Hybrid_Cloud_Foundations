@@ -69,3 +69,11 @@ Examples of these web-scale applications with a global reach are Facebook, Netfl
 In the State of the DevOps Report 2019, it was determined that the highest performing teams are 24 times more likely to execute on all five cloud capabilities, when compared to lower performing teams. The cloud, therefore, can be viewed as a differentiator for elite performers as well as a tool in general that drives high performance.
 
 There are first two major aspects of cloud consumption that organizations need to take into consideration: fiscal consumption and workload predictability.
+
+### Cloud Considerations: Workload Predictability
+
+The public cloud is best for elastic workloads. The public cloud allows you to spin up or spin down resources to meet the workload’s demands quickly, easily, and efficiently when a workload is unpredictable.
+
+The private cloud is great for predictable workloads. It is a secure and efficient way to run core workloads, with the agility and sit-back simplicity that IT teams want, and with the control that an organization needs for on-prem workloads.
+
+Distributed workloads across public and private cloud still allows you to control and manage them centrally. The overall management of your deployment is simplified this way.

@@ -64,3 +64,8 @@ A customer request comes to a web load balancer.
 The web load balancer directs the request to any of the web presentation tier members, in this case Web4, to show a web page which needs to display application logic served through the AppServer Load Balancer from the Application Logic Tier members, in this case from AppServer2. AppServer2, in turn, reads data from the database cluster, in this case: the Database3 instance.
 
 Examples of these web-scale applications with a global reach are Facebook, Netflix, and Gmail.
+
+### The Cloud Differentiator
+In the State of the DevOps Report 2019, it was determined that the highest performing teams are 24 times more likely to execute on all five cloud capabilities, when compared to lower performing teams. The cloud, therefore, can be viewed as a differentiator for elite performers as well as a tool in general that drives high performance.
+
+There are first two major aspects of cloud consumption that organizations need to take into consideration: fiscal consumption and workload predictability.

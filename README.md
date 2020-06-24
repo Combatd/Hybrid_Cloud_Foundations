@@ -40,3 +40,11 @@ Starting an organization's digital transformation:
 2. How do you choose between application hosts? Infrastructure as a Service, Platform as a Service, or Software as a Service?
 3. How does your choice impact workload design, deployment, management, and costs?
 4. Can you leverage multiple models effectively?
+
+### Application Design: The Monolith
+When we refer to monolithic, we mean there is one, single source of every component in the stack.
+
+* It is a single application written in a single language.
+* It is run in a batch, or is constantly executed on a single instance of infrastructure.
+* To address performance issues and bottlenecks, it is necessary to scale up by increasing compute, storage, and memory resources. These resources are always constrained to a monolithic server’s capabilities.
+* The infrastructure is also monolithic. It is provided by a single vendor, who potentially also controls the application development tools, database, and operating system layers that are running on their hardware.

@@ -125,3 +125,21 @@ Disadvantages
 * Despite being scalable, these systems were not highly available, opening businesses to the risks of downtime and data loss.
 * The inherent scalability of the distributed systems also led to sprawl, which made them difficult to secure and manage.
 * Finally, because of the sheer number of components involved in different systems, IT organizations experienced sprawl as well, becoming disjointed and siloed.
+
+### Legacy IT: Centralized Storage and 3-tier
+Centralized storage, as the name suggests, involves high volume, shareable storage that can be accessed by multiple servers over the network. It provides standalone servers with pools of storage and data protection via multiple network paths, multiple storage processors, and RAID protection at the disk level.
+
+* A Storage Area Network is a dedicated, specialized, high speed network that provides access to block-level storage. A SAN typically consists of hosts, switches, and storage devices, all connected to each other.
+* A NAS is a storage device that is connected to a network and allows data to be stored and retrieved from a centralized location. NAS devices use Ethernet to access shared storage devices at the file level.
+* Centralized storage works with distributed computing to create the 3-tier infrastructure architecture that is popularly used in datacenters today. In this computing model, servers and storage are separate entities, connected through a storage network.
+
+Advantages
+* Centralized storage solved the data availability problem that was caused by distributed computing.
+* The ability to add storage separately from computing resources also meant that companies could scale storage to meet the needs of their growing data.
+* An added benefit was that application high-availability became easier in distributed environments, because centralized storage facilitated shared disk access for clustering.
+
+Disadvantages
+* Storage array and network management became a specialized IT domain, resulting in the need for specialized skills.
+* As centralized storage increased in sophistication, it also brought increased complexity via concepts like SAN fabrics, WWPNs, RAID groups,volumes, spindle counts, and so on.
+* The flexibility to add storage separately from computing meant that scaling was also uneven – storage was scaled in large blocks, while servers were scaled in smaller increments.
+* This resulted in large CapEX commitments when storage was needed. Since storage was purchased in large blocks, it could sometimes take years to fill the available disk space, resulting in very long time to value.

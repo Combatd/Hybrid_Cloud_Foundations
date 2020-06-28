@@ -255,12 +255,14 @@ Hyperconverged Infrastructure (HCI) converges the entire datacenter stack, inclu
 
 Note that unlike its 3-tier incarnation – which was only 66% converged – HCI is fully converged.
 
+SSDs and HCI
 The key points to remember about SSDs and HCI are:
 
 * SSDs improve performance of the storage tier if they are * bottlenecking on read-write performance at the disk level.
 * To leverage the extreme advances in performance, the controllers and network need to be able to handle the vast I/O capabilities of SSDs.
 * Data locality is a key component of HCI; not having to transit the network provides better utilization of an SSDs capabilities.
 
+HCI and Private Cloud
 Out of the box, HCI isn’t a true private cloud. To have a fully operational private cloud, you also need to have:
 
 * Unified management support
@@ -270,6 +272,7 @@ Out of the box, HCI isn’t a true private cloud. To have a fully operational pr
 * Sophisticated backup and disaster recovery solutions
 * Tools for automation and self-service; and cost governance
 
+Hybrid Cloud Readiness
 Your cloud readiness will be high if:
 
 * A Private Cloud is deployed on the HCI

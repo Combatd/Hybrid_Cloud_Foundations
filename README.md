@@ -285,3 +285,27 @@ Your cloud readiness will be high if:
 * An HCI deployment is being used exclusively to run legacy, shrink-wrapped applications
 * Automation and orchestration tools are not being leveraged
 * There is no supplemental use of Public Cloud
+
+### Hybrid Cloud: Hybrid Cloud: When To Use It And When Not To
+
+Remember, hybrid cloud is not a good fit when:
+
+* A business has non-portable applications
+* Security and regulatory compliance requirements do not allow public cloud exposure
+* Delegation of management responsibilities to a service provider is not allowed
+* The Public Cloud is too expensive
+
+For businesses born in the public cloud, a hybrid cloud does not make sense without the ability to invest in private, on-premises infrastructure, a supporting operations team, and ongoing skill growth.
+
+Examples of where the hybrid cloud is a good fit are:
+
+* Workloads with constantly changing populations
+* Large scale workload management
+* Short-lived ephemeral workloads
+* Dev/Test
+* Training infrastructure
+* Anti-spam and anti-virus engines
+* CRM platforms
+* E-mail
+* Web servers
+* One-off big data projects

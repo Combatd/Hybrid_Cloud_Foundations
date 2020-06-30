@@ -450,3 +450,10 @@ In this lesson, we covered:
 * The different models to support various Cloud initiatives
 * The Engineer’s role in Service Level Agreements related to Cloud apps
 * How to choose the optimal Cloud platform for an app, based on business requirements and SLAs
+
+## Chapter 2: Introduction to Nutanix Hyperconverged Infrastructure
+
+1. The what and why of Nutanix HCI
+2. The components of a cluster
+3. The software components of a Nutanix cluster
+4. How to work with the Prism interface

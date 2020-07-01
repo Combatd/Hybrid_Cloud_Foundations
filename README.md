@@ -457,3 +457,31 @@ In this lesson, we covered:
 2. The components of a cluster
 3. The software components of a Nutanix cluster
 4. How to work with the Prism interface
+
+### Why Nutanix HCI?
+Quick Review of the Legacy Infrastructure
+
+There are a few reasons legacy infrastructure is not well suited to meet the increasing requirements of enterprise applications or the fast pace of modern business:
+
+* The silos created by traditional infrastructure have become a barrier to change and progress, adding complexity to every step of the IT process from ordering to deployment to management.
+* New business initiatives require cooperation from multiple teams. They also need organizations to predict IT infrastructure 3 to 5 years in advance. For context, this is pretty hard to get right.
+* Vendor lock-in and rising licensing costs are significantly increasing budgets.
+
+HCI addresses these pain points by combining standard datacenter hardware using locally attached storage resources with intelligent software to create flexible building blocks. These flexible building blocks can replace legacy infrastructure with separate servers, storage networks, and storage arrays.
+
+Benefits of the Nutanix HCI
+
+Nutanix provides the public cloud benefits that organizations want with the control that they need on-prem. There are six major benefits to Nutanix HCI specifically:
+
+* Full-cloud: It’s a full-cloud stack that integrates all compute, storage, virtualization, and networking resources to run any application.
+
+* One-click simplicity: This entire stack is managed via a single pane of glass that streamlines IT lifecycle management and makes hybrid and multi-cloud management easy .
+
+* Deployed in minutes: The applications themselves can be deployed in minutes, instead of weeks or months. This is true for new infrastructure as well.
+
+* Automation application management: Application management can also be automated, along with other common IT tasks. Application owners and developers can also be given on-demand IT services.
+
+* Lower cloud costs: You can also reduce your datacenter TCO by up to 60%. This will help optimize your public cloud spend with lower cloud costs.
+
+* True hybrid cloud: This refers to the ability for you to combine both public and private cloud operations with unified management.
+

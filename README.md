@@ -485,3 +485,13 @@ Nutanix provides the public cloud benefits that organizations want with the cont
 
 * True hybrid cloud: This refers to the ability for you to combine both public and private cloud operations with unified management.
 
+### What is Nutanix HCI?
+
+Nutanix HCI is fully software-defined, which is required from a true HCI solution. This means that the intelligence of the solution comes from the software, which runs on a variety of hardware platforms.
+
+There are two key components to the software:
+
+1. Acropolis: The data plane
+2. Prism: The management plane
+
+This software can be run on a number of different servers, from manufacturers such as Dell, Lenovo, HPE, Cisco, IBM, Inspur, and so on. In general, the hardware platforms themselves are structured as nodes, blocks, and clusters.

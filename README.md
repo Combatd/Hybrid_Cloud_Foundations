@@ -495,3 +495,24 @@ There are two key components to the software:
 2. Prism: The management plane
 
 This software can be run on a number of different servers, from manufacturers such as Dell, Lenovo, HPE, Cisco, IBM, Inspur, and so on. In general, the hardware platforms themselves are structured as nodes, blocks, and clusters.
+
+### Hardware Components: Nodes, Blocks, and Clusters
+
+A node is an x86 server with compute and storage resources. A single Nutanix cluster can have an unlimited number of nodes. Different hardware platforms are available to address varying workload needs for compute and storage.
+
+Each node in the cluster:
+* Runs a standard hypervisor
+* Contains processors, memory, and local storage such as SSDs and hard disks.
+* A Nutanix Controller VM that enables the pooling of local storage from all nodes in the cluster.
+
+All nodes in a Nutanix cluster converge to deliver a unified pool of tiered storage and present resources to VMs for seamless access. A global data system architecture integrates each new node into the cluster, allowing you to scale the solution to meet the needs of your infrastructure.
+
+A block is a chassis that holds one to four nodes, and contains power, cooling, and the backplane for the nodes. The number of nodes and drives depends on the hardware chosen for the solution.
+
+A cluster is a collection of multiple blocks. It refers to the physical servers, logically associated with one another, that deliver a unified pool of infrastructure resources. It can handle the failure of a single node when specific cluster conditions are met. In the case where multiple nodes in a block fail, guest VMs can continue to run because cluster configuration data has been replicated on other blocks.
+
+A Sample Block
+This graphic shows a 4-node block in which each node takes up one node position identified as A, B, C, or D. In this block chassis example, the node ports are accessible from the rear of the chassis and the storage is at the front. A Nutanix block is a rack-mountable enclosure that contains one to four Nutanix nodes. It can handle the failure of a single node when specific cluster conditions are met. In the case where multiple nodes in a block fail, guest VMs can continue to run because cluster configuration data has been replicated on other blocks.
+
+Sample Cluster
+What you see here is a visualization of a cluster, with both its physical and logical components highlighted. This particular example contains three nodes, each of which has a controller VM, locally attached storage, and has guest VMs running. All of the locally attached storage is presented as a single pool to the guest VMs, via the Controller VM.

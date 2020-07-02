@@ -516,3 +516,60 @@ This graphic shows a 4-node block in which each node takes up one node position 
 
 Sample Cluster
 What you see here is a visualization of a cluster, with both its physical and logical components highlighted. This particular example contains three nodes, each of which has a controller VM, locally attached storage, and has guest VMs running. All of the locally attached storage is presented as a single pool to the guest VMs, via the Controller VM.
+
+### Software Components: Acropolis
+
+Acropolis is a distributed data plane for either VMs or container-based applications that runs across a cluster of nodes delivering enterprise storage and virtualization services. Acropolis is also the foundation of an HCI solution that transforms HCI into a Hybrid Cloud OS.
+
+Here are the main components:
+
+* The Distributed Storage Fabric (DSF)
+* The Acropolis Hypervisor (AHV)
+* Scale-out storage services
+* Advanced virtual networking
+
+Let's take a look at each of these below!
+
+Acropolis: Distributed Storage Fabric
+
+Here is a representation of the Distributed Storage Fabric (DSF). The DSF simplifies storage and data management for virtual environments, by pooling flash and hard disk drive storage across a Nutanix cluster and exporting it as a data store to the virtualization layer as Small Computer Systems Interface (iSCSI), Network File System (NFS), and Server Message Block (SMB) which are all different ways of data sharing.
+
+DSF offer capabilities:
+
+* Snapshots
+* Compression
+* Cloning
+* Data locality
+* Deduplication
+* Erasure coding
+* Tiering
+* Replication
+
+Acropolis: AHV
+
+Acropolis Hypervisor (or AHV) is a comprehensive virtualization solution that’s included as part of the Nutanix solution, bundled with Acropolis.
+
+AHV is the virtualization layer in the illustration example. It enables a variety of key capabilities including:
+
+* Backup
+* Disaster recovery
+* Host and VM high availability
+* Dynamic scheduling
+
+Acropolis: Scale-out Storage Services
+
+Nutanix allows you leverage scale-out, fully software-defined storage services via Nutanix Files, Nutanix Volumes, and Nutanix Objects.
+
+* Nutanix Files file services provides access to Microsoft Windows via SMB 2.1 and to Linux and Unix via the NFS v4 protocol. It also scales and load balances multiple nodes in the cluster, growing capacity and performance as needed.
+* Nutanix Volumes block services provides iSCSI access to applications that require direct access to block storage. This can be non-virtualized systems, or virtual machines with specific requirements. Volumes uses the DSF to scale I/O across the entire cluster and can load balance and accelerate specified Volume Groups.
+* Nutanix Buckets object storage services is a software-defined object storage solution that non-disruptively scales out while lowering overall costs. It supports an industry-standard S3-compatible REST API to handle petabytes of unstructured data.
+
+Acropolis: Virtual Networking
+
+Nutanix Flow:
+
+* Delivers advanced networking and security services, providing visibility into the virtual network, application-centric protection from network threats and automation of common networking operations.
+* Allows organizations to deploy software-defined virtual networking without having to install and manage additional products that have separate management and independent software maintenance requirements.
+* Provides detailed visualization of communications between VMs, making it simple and straight-forward to set the right policies for the environment.
+* Micro-segmentation provides granular control and governance of all traffic into and out of a VM, or groups of VMs. It ensures that only permitted traffic between application tiers or other logical boundaries is allowed and protects against advanced threats propagating within the virtual environment.
+* Provides API-based notifications enabling third-party network devices to observe VM lifecycle events, such as the instantiation of a new VM into the Nutanix environment.

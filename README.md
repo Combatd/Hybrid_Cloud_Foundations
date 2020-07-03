@@ -573,3 +573,19 @@ Nutanix Flow:
 * Provides detailed visualization of communications between VMs, making it simple and straight-forward to set the right policies for the environment.
 * Micro-segmentation provides granular control and governance of all traffic into and out of a VM, or groups of VMs. It ensures that only permitted traffic between application tiers or other logical boundaries is allowed and protects against advanced threats propagating within the virtual environment.
 * Provides API-based notifications enabling third-party network devices to observe VM lifecycle events, such as the instantiation of a new VM into the Nutanix environment.
+
+### Software Components: Prism
+This is Prism, the single dashboard from which you can manage your entire Nutanix solution.
+
+Prism is a distributed management plane that uses advanced data analytics and heuristics to simplify and streamline common workflows, eliminating the need for separate management solutions for servers, storage networks, storage, and virtualization. It provides a unified management interface that can generate actionable insights for optimizing virtualization, provides infrastructure management and everyday operations.
+
+In Prism, Nutanix administrators can easily manage and operate their end-to-end virtual environments.
+
+Just as Acropolis creates a data plane that spans the entire cluster for performance and resiliency, Prism creates the same resiliency for management and operational intelligence.
+
+The information in Prism focuses on common operational tasks grouped into four areas:
+
+* Infrastructure management
+* Operational insight
+* Capacity planning
+* Performance monitoring

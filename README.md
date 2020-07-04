@@ -618,3 +618,24 @@ The Home dashboard is a summary overview of your Nutanix cluster:
 
 Infrastructure Management
 There are a lot of different dashboard available to you here depending on what type of information you'll need. We'll go through some of these dashboards during the course, but here's an opportunity to see what the options are. The Home drop down menu has a number of dashboards you can explore, each tailored around providing details on a specific area of your cluster.
+
+### Prism - Infrastructure Management: Storage Management
+Storage Dashboard: Overview
+The Storage dashboard view shows you an overview of the storage environment, important performance charts, data reduction metrics, capacity summaries, and important alerts and warnings. If an administrator needs more details about certain storage services, then they can use the table view.
+
+This screen provides three views that offer insight into the storage constructs within a cluster:
+
+* Volume groups
+* Containers
+* Storage pools
+
+The table view displays the configuration settings for each container, capacity metrics, and several performance charts.
+
+The different views of the Storage dashboard are fundamentally the same, each view allows you to interact with and drill down into various components in different ways. The table view puts the storage containers, volume groups, and storage pools front and center. It provides a number of details at a glance about each of these components:
+
+* Controller IOPS, total capacity, free and used capacity, status of various space optimization features, and more.
+* Usage and performance summaries, as well as storage alerts and events.
+
+The information you need from the Storage dashboard will determine which view you'll use and interact with.
+
+From the Storage dashboard, you can also create new Storage Containers and new Volume Groups by filling in details in a simple form based on your requirements.

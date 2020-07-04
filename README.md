@@ -589,3 +589,5 @@ The information in Prism focuses on common operational tasks grouped into four a
 * Operational insight
 * Capacity planning
 * Performance monitoring
+
+Prism is a single interface that eliminates the need for separate management solutions for servers, storage networks, storage, and virtualization. It generates actionable insights for optimizing virtualization, provides infrastructure management and everyday operations.

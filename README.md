@@ -591,3 +591,30 @@ The information in Prism focuses on common operational tasks grouped into four a
 * Performance monitoring
 
 Prism is a single interface that eliminates the need for separate management solutions for servers, storage networks, storage, and virtualization. It generates actionable insights for optimizing virtualization, provides infrastructure management and everyday operations.
+
+### Prism - Infrastructure Management: Cluster Management
+Four Common Operational Areas
+1. Infrastructure Management
+2. Operational Insight
+3. Capacity Planning
+4. Performance Monitoring
+
+
+Infrastructure management refers to cluster management, upgrades, storage management, virtual machine management, networking, data protection, entity management, user management, localization, and a handful of other key features.
+
+Cluster management refers the overall view of your entire cluster that you see on the Prism home screen.
+
+The Home dashboard is a summary overview of your Nutanix cluster:
+
+* A count of blocks and hosts with model numbers
+* A summary of storage
+* VMs
+* Hardware
+* Cluster-wide controller IOPS
+* Latency
+* CPU usage
+* Memory usage
+* Alerts and events
+
+Infrastructure Management
+There are a lot of different dashboard available to you here depending on what type of information you'll need. We'll go through some of these dashboards during the course, but here's an opportunity to see what the options are. The Home drop down menu has a number of dashboards you can explore, each tailored around providing details on a specific area of your cluster.

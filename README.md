@@ -671,10 +671,17 @@ The second of the four key areas in which Prism helps organizations manage their
 * Analysis
 * Network visualization
 
-Operational Insights: Alerts Dashboardc
+Operational Insights: Alerts Dashboard
 
 Alerts Dashboard: Alerts View
 Alerts in Prism provide administrators with information about informational, warning, and critical alerts. The Alerts dashboard has two views – Alerts and Events. The Alerts view presents all notifications and events in an easy-to-consume table format. The table presents each alert with a color-coded severity level, a description of the alert, a timestamp, which entities the alert involves, and cause and resolution guidance.
 
 Alerts Dashboard: Events View
 The Event view displays a list of event messages. Event messages describe cluster actions such as adding a storage pool or taking a snapshot. This view is read-only and you do not need to take any action like acknowledging or resolving generated events.
+
+### Prism Operational Insights: Analysis Dashboard
+The Analysis dashboard stacks multiple charts and lines them up in time sync.
+
+Above the stack of charts, Prism adds all alerts and events, represented with colors and counts. This visual layout lets an administrator click on a chart at any point in time, placing a vertical line stretched through all charts for easy correlation. By focusing on a specific point and syncing all metrics, administrators can reduce the effort it takes to identify possible root causes. The rightmost column of the screen provides a summary of any alerts and events, so you don’t need to leave the analysis page.
+
+The analysis view allows you to fully customize the number and size of the analytical charts you see and to add charts to your screen or remove them as needed. You can export each chart to a .csv or .json file.

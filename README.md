@@ -733,3 +733,9 @@ By default, Alert email notifications are enabled. This feature sends alert mess
 You can also customize your Alert emails. To aid in your cluster monitoring efforts, you can schedule the frequency of these Alert emails, the recipients, and the conditions under which an email will be sent.
 
 You can also edit the contents of the email itself.
+
+### Lesson Recap
+* The hardware and software components of HCI
+* Acropolis: AHV, DSF, Virtual Networking, Storage Services
+* Prism: Infrastructure Management, Operational Insights, Capacity 
+* Planning, and Performance Monitoring

@@ -639,3 +639,16 @@ The different views of the Storage dashboard are fundamentally the same, each vi
 The information you need from the Storage dashboard will determine which view you'll use and interact with.
 
 From the Storage dashboard, you can also create new Storage Containers and new Volume Groups by filling in details in a simple form based on your requirements.
+
+### Prism - Infrastructure Management: Virtual Machine Management
+VM Dashboard: Table View
+The VM Dashboard provides the same kind of overview summary that the cluster and storage management views offer.
+
+* The VM summary delivers VM counts as well as VM power status.
+* Highlighted CPU and memory usage statistics focus on provisioned amounts versus reserved amounts.
+* You can also see the top VM consumers for IOPS, latency, memory usage, and CPU usage, enabling you to identify which VMs are using the most resources and detect any outliers.
+
+VM Dashboard: Table View
+Following the user experience in the other sections, the VM-focused view in Prism also offers a table-based layout for VM management. Similar to the detailed host data in the cluster view, the VM-based view provides a greater number of VM-focused data points.
+
+This VM-focused view allows organizations to easily compare the CPU and memory settings configured versus the actual amounts of CPU and memory used. You can also access storage metrics for read versus write IOPS, combined IOPS, storage bandwidth, and latency. Prism tracks each of these data points on a per-VM basis to give a quick overview and locate potential issues faster.

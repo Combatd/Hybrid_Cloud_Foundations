@@ -937,3 +937,14 @@ Datacenter switches have the following characteristics:
 * 10 Gbps or faster links for Nutanix CVM traffic: Only use 1 Gbps links either for additional user VM traffic or when 10 Gbps connections are not available, such as in a ROBO deployment. Limit Nutanix clusters using 1 Gbps links to eight nodes.
 
 Once you’ve found the right switch, that’s one big decision dealt with. The other is which networking design to use. And whether you’re designing a new network or transitioning an older network into cloud-scale architecture, it is important to know the differences and characteristics of two prominent network topologies: Core-Aggregation-Access networking, which is also called 3-Tier networking, and Leaf-Spine architecture.
+
+### Physical Networking Topology: Core-Aggregation-Access (3-Tier)
+This architecture contains three layers: Core, Aggregation, and Access.
+
+The core layer provides fast transport between distribution layer switches. The core layer provides routing services to other parts of the data center, as well as to services outside of the data center such as the Internet, geographically separated data centers and other remote locations. The network core delivers routing services, making complex routing decisions for optimized networking traffic, advertises routes, stores network configurations, and provides a gateway for all networks to communicate internally and externally.
+
+The aggregation layer has redundant connections to access layer switches and connects to the core layer.
+
+The access layer is where host devices are connected to the network. It plays a vital role in meeting server requirements such as NIC teaming, clustering, and broadcast containment.
+
+In the Core-Aggregation-Access networking model, devices are connected to each other within a layer, as well as across layers for redundancy. This model scales somewhat well, but it is subject to bottlenecks if uplinks between layers are oversubscribed. This can come from latency incurred as traffic flows through each layer and from blocking redundant links. Also, the cost per port is fairly high. The hardware and logic contained within core switches made them cost-prohibitive to scale.

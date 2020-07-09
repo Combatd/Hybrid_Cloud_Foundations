@@ -1089,3 +1089,12 @@ Let’s start at the very beginning, with a simple question - what is a virtual 
 As we’ve seen in previous lessons, it’s also a core part of a virtualized system since it’s created by abstracting the resources of a physical machine. VMs are used to provide the end users of a virtualized system with a familiar, comfortable substitute for a real machine.
 
 And VM management refers to activities such as starting and stopping a VM, updating a VM’s configuration, and migrating, cloning, or deleting a VM. With Nutanix specifically, all of these activities are performed in Prism, and on the VM dashboard that we discussed briefly in lesson 2. So, before we move on to these operations, let’s quickly look at the VM dashboard again, but in a little more detail.
+
+### The VM Dashboard
+All of the VM management tasks that were listed earlier are performed here, on the table view of the VM dashboard. As you can see here, the Table view has three major sections – a table in the center of the screen that contains a list of all VMs on the cluster; a VM Summary box at the bottom left with information like total number of VMs, provisioned and reserved CPU and memory, etc.; and two tabs for VM performance summary and VM tasks respectively.
+
+What we’re interested in right now is the VM table, which you’re seeing here. If you look below the table, you’ll see that there’s nothing of note – just the “Summary” heading and that’s it. However, if we were to select a VM from the table things look a little different.
+
+As you can see, with Test VM 001 selected, we now have access to a variety of different management options. You can manage Nutanix Guest Tools, Launch the VM’s console, power the VM on or off, take a snapshot, and migrate, clone, update, or delete the VM.
+
+So, now that you know how to access these options, let’s look at VM creation and management in more detail.

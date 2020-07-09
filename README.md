@@ -893,3 +893,8 @@ Security Technical Implementation Guides, or STIGs, are the configuration standa
 A STIG describes how to minimize network-based attacks and prevent system access when the attacker is interfacing with the system, either physically at the machine or over a network. STIGs also describe maintenance processes such as software updates and vulnerability patching. Advanced STIGs cover the design of a corporate network, covering the configurations of routers, firewalls, domain name servers, and switches.
 
 Once deployed, STIGs lock down IT environments and reduce security vulnerabilities in infrastructure. Traditionally, using STIGs to secure an environment is a manual process that is highly time-consuming and error prone. Because of this, only the most security-conscious IT shops follow the required process. Nutanix has created custom STIGs that are based on the guidelines outlined by The Defense Information Systems Agency, or DISA, to keep the Hybrid Cloud Platform within compliance and reduce attack surfaces.
+
+### Data-at-Rest Encryption
+Data-at-Rest Encryption secures data while at rest using self-encrypting drives and key-based access management. For customers who require enhanced data security, Nutanix provides a software-only encryption option for data-at-rest security which does not require self-encrypting drives.
+
+With Nutanix’s Data-at-Rest Encryption implementation data is encrypted on all drives at all times, data is inaccessible in the event of drive or node theft, data on a drive can be securely destroyed, protection can be enabled or disabled at any time, and no performance penalty is incurred despite encrypting all data.

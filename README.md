@@ -1009,3 +1009,6 @@ Ports are logical constructs created in a bridge that represent connectivity to 
 * VXLAN ports are used for the IP address management functionality provided by Acropolis.
 
 * Bonded ports provide NIC teaming for the physical interfaces of the AHV host.
+
+### Virtual Networking: Bonds
+It is possible to balance traffic across bond uplinks, via one of three bond modes: active-backup, balance-slb, and LCAP with balance-tcp. Let’s take a quick look at each of these bond modes next.

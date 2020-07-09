@@ -1076,3 +1076,16 @@ Ports: Logical constructs created in a bridge that represent connectivity to the
 * A virtual LAN (VLAN): A subgroup of a network, which combines multiple networking devices into a single domain and partitions them off from the rest.
 * Unmanaged networks: VMs get a direct connection to their VLAN of choice.
 * A managed network: A VLAN plus IP Address Management.
+
+## Chapter 5: Managing Virtual Machines in the Hybrid Cloud
+### Lesson Overview
+* Introduction to VM management
+* Working with Disc Images
+* Creating and Managing VMs
+* Understanding VM High Availability
+
+Let’s start at the very beginning, with a simple question - what is a virtual machine? A virtual machine, or VM, is an emulation of a computer system. It’s based on computer architectures, is typically called an image, and provides the functionality of a physical computer.
+
+As we’ve seen in previous lessons, it’s also a core part of a virtualized system since it’s created by abstracting the resources of a physical machine. VMs are used to provide the end users of a virtualized system with a familiar, comfortable substitute for a real machine.
+
+And VM management refers to activities such as starting and stopping a VM, updating a VM’s configuration, and migrating, cloning, or deleting a VM. With Nutanix specifically, all of these activities are performed in Prism, and on the VM dashboard that we discussed briefly in lesson 2. So, before we move on to these operations, let’s quickly look at the VM dashboard again, but in a little more detail.

@@ -982,3 +982,14 @@ And virtual networking, to put it very simply, facilitates communication between
 There are four major components that we need to talk about: virtual switches, bridges, ports, and bonds.
 
 This virtual switch controls and directs communication between the existing physical network and virtual parts of the network, like virtual machines. A virtual network adapter allows VMs to connect to a network, and allows the VMs on a LAN to connect to a larger network as well.
+
+### Virtual Networking: Virtual Switches
+As we discussed earlier, virtual switches allow communication between virtual machines. More specifically, they intelligently direct communication on a network by checking data packets before sending them along to their destination.
+
+Using virtual switches simplifies the complexity that comes with configuring and managing a network. This is because virtual switches help reduce the number of switches that need to be managed after factoring in the size of the network, data packets, and architecture. Because they’re entirely software-based, it’s easier to roll out new functionality for virtual switches as compared to physical, hardware-based ones.
+
+Nutanix AHV uses Open vSwitch, or OVS, to manage the network across all nodes in the Nutanix cluster. OVS is an open source software switch implemented in the Linux kernel and designed to work in a multi-server virtualization environment. By default, OVS behaves like a layer-2 learning switch that maintains a MAC address table. The hypervisor host and VMs connect to virtual ports on the switch.
+
+OVS supports many popular switch features, including VLAN tagging, Link Aggregation Control Protocol (LACP), port mirroring, and quality of service (QoS), to name a few. Each AHV node maintains an OVS instance, and all OVS instances combine to form a single logical switch. Constructs called bridges manage the switch instances residing on the AHV hosts.
+
+Let's break down some of these virtual networking components that make up Nutanix AHV.

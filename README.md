@@ -739,3 +739,11 @@ You can also edit the contents of the email itself.
 * Acropolis: AHV, DSF, Virtual Networking, Storage Services
 * Prism: Infrastructure Management, Operational Insights, Capacity 
 * Planning, and Performance Monitoring
+
+## Chapter 3: Hybrid Cloud Security
+
+Security today is more complicated than it’s ever been. There are more workloads than the industry has ever had to deal with before. As a result of virtualization, these workloads are often sitting on a single hardware platform.
+
+With traditional infrastructure, stacks are composed of products from multiple vendors, each with a narrow and limited view of security. Validating and maintaining a security baseline through continuous software upgrades, is time-consuming and often involves error-prone manual processes that take away from innovation and productivity.
+
+Traditional security solutions such as firewalls are often blind to the internal communication between virtual machines and applications. Once cybercriminals infiltrate the network, they can take up residence and move laterally without being detected. The inherent complexity of this infrastructure has led to increased risks.

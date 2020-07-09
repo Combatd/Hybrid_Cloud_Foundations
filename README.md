@@ -860,3 +860,8 @@ Our security development life cycle integrates security into every step of produ
 For example, research and development teams work together to fully understand all the code in the product, whether it is produced in-house or inherited from dependencies. We schedule product updates to handle known common vulnerabilities and exposures, or CVEs, for minor release cycles, and backport all dependencies to their latest release versions in major release cycles. This approach significantly reduces zero-day risks without slowing down product evolution.
 
 Efficient one-click operations and self-healing security models enable automation to maintain security in an always-on hyperconverged solution. Finally, Nutanix also delivers validated joint solutions with security-focused vendors.
+
+### Security in the Hybrid Cloud
+As a result of the Nutanix approach to SecDL, and with the way we built security into our products from the ground up, you’ll find that the Hybrid Cloud has a number of security features available out of the box.
+
+While there’s more to Nutanix security than the five points you’re seeing here, these are the major topics we’re going to talk about in this lesson. Broadly, we’re going to cover two-factor authentication, cluster lockdown, key management and administration, STIG implementation, data-at-rest encryption, and role-based access control.

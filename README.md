@@ -1149,3 +1149,13 @@ To enable VM HA, click the gear icon at the top right of the screen to open the 
 
 As you can see here, HA Reservation is disabled by default. The dialog informs you that resources are not reserved, and in case of a failure VMs will be restarted based on the amount of resources that are available to the cluster. To enable VM HA, select the Enable HA Reservation checkbox.
 The dialog updates to inform you that a certain amount of resources will be reserved to provide protection in case of a host failure. To save this change and enable VM HA, click Save.
+
+### Lesson Recap
+* Introduced you to VM management
+* Worked with Disc Images
+* Showed you how to create and manage VMs
+* Discussed VM High Availability
+
+### Glossary
+* A virtual machine (or VM): An emulation of a computer system. It’s based on computer architectures, is typically called an image, and provides the functionality of a physical computer.
+* High availability: Refers to the ability of a system to run continuously without failure.

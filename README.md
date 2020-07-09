@@ -865,3 +865,14 @@ Efficient one-click operations and self-healing security models enable automatio
 As a result of the Nutanix approach to SecDL, and with the way we built security into our products from the ground up, you’ll find that the Hybrid Cloud has a number of security features available out of the box.
 
 While there’s more to Nutanix security than the five points you’re seeing here, these are the major topics we’re going to talk about in this lesson. Broadly, we’re going to cover two-factor authentication, cluster lockdown, key management and administration, STIG implementation, data-at-rest encryption, and role-based access control.
+
+### Two-Factor Authentication
+Several different types of authentication exist, including one way, two way, and two-factor.
+
+One way authentication involves simply authenticating to the server. Two-way involves the server also authenticating the client.
+
+Two-factor authentication is a subset of multi-factor authentication, which involves presenting two or more pieces of evidence to an authentication mechanism. These pieces of evidence are typically combinations of three things: something the user knows, something the user has, and something the user is.
+
+A good example of this is typically bank transactions. Very often, when performing an online transaction, you’ll also be asked to confirm the transaction by entering a time-limited password sent to your mobile phone via text message, or to your email account. In this case, entering your card or account details represent knowledge as the first factor, and the password comes from something you have or own – in this example, your phone or email account.
+
+Two-factor authentication simply involves two pieces of information. In the case of Nutanix’s implementation, it involves a username and password combination, and a client certificate. For two-factor authentication, Nutanix administrators can use either local accounts, or Active Directory.

@@ -823,3 +823,10 @@ The SecDL was developed during the time of waterfall, so it is usually portrayed
 The first phase is essentially requirements gathering. In this phase, the goal is to defined the security best practices that will be integrated into a product. These practices may come from industry standards or be based on responses to problems that have occurred in the past. Requirements exist to define the functional security requirements implemented in the product, and include all the activities of the SDL. They are used as an enforcement point to ensure that all pieces are properly considered.
 
 Requirements may take the classic form, stating that the product or application must, can, or should, do something. An example might be that the product must enforce a minimum password length of eight characters. In the agile world, requirements are expressed as user stories. These stories contain the same information as do the requirements, but security functionality is written from the user's perspective.
+
+### SecDL: Design
+The design phase of the SDL consists of activities that ideally occur before code is written. Secure design is about quantifying an architecture, for a single feature or the entire product, and then searching for problems.
+
+The key to identifying problems is threat modeling. Threat modeling is the process of thinking through how a feature or system will be attacked, and then mitigating those future attacks in the design before writing the code. If you’ve seen the 2002 film Minority Report, that’s kind of the function that threat modeling serves – it’s about preventing crimes before they happen.
+
+A solid threat model understands a feature's, or product's, attack surface. It then defines the most likely attacks that will occur across those interfaces. A threat model is only as good as the mitigations it contains to fix the problems. It is crucial to identifying security issues early in the process.

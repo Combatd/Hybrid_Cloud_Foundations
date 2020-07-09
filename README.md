@@ -1050,3 +1050,29 @@ A managed network is a VLAN plus IP Address Management. IPAM is the cluster capa
 The Acropolis Master acts as an internal DHCP server for all managed networks. The OVS is responsible for encapsulating DHCP requests from the VMs in VXLAN and forwarding them to the Acropolis Master. VMs receive their IP addresses from the Acropolis Master’s responses. The IP address assigned to a VM is persistent until you delete the VNIC or destroy the VM.
 
 The Acropolis Master runs the CVM administrative process to track device IP addresses. This creates associations between the interface’s MAC addresses, IP addresses and defined pool of IP addresses for the AOS DHCP server.
+
+### Lesson Recap
+* Physical and Virtual Networking
+* Components of AHV Networking
+* How to work with VLANs
+
+## Glossary
+* Physical networking: The network topology including the devices, their location, and the physical cables that connect those devices to each other.
+* Core layer: Provides fast transport between distribution layer switches. The core layer provides routing services to other parts of the data center, as well as to services outside of the data center such as the Internet, geographically separated data centers and other remote locations.
+* Aggregation layer: Has redundant connections to access layer switches and connects to the core layer.
+* Access layer: Where host devices are connected to the network. It plays a vital role in meeting server requirements such as NIC teaming,clustering, and broadcast containment.
+* Core-aggregation-access (or three-tier) design: A modular layout that allows you to upgrade and scale layers independently.
+* Leaf-spine network design: Popular in new datacenter deployments because it’s easy to deploy and easy to scale after deployment. A leaf-spine topology requires at least two spine switches and two leaf switches. Every leaf connects to every spine using uplink ports. There are no connections between the spine switches or between the leaf switches in the conventional leaf-spine design. This architecture maintains consistent performance without any reduction in throughput.
+* Spine switches: Contain the routing, switching, and network services required for core network functions.
+* Leaf switches: Exclusively provide high port density for network communications and extend the network configuration of the core out to the endpoints.
+* Virtual networking: Facilitates communication between virtual machines. It’s based on physical networking principles, but its functions are software-driven.
+* Virtual switch: Controls and directs communication between the existing physical network and virtual parts of the network, like virtual machines.
+* Virtual network adapter: Allows VMs to connect to a network, and allows the VMs on a LAN to connect to a larger network as well. Open vSwitch (OVS): Manages the network across all nodes in the Nutanix cluster. OVS is an open source software switch implemented in the Linux kernel and designed to work in a multi-server virtualization environment.
+* Bridges: Act as virtual switches that manage network traffic between physical and virtual network interfaces.
+Ports: Logical constructs created in a bridge that represent connectivity to the virtual switch.
+* Active-backup: The simplest bond mode, easily allowing connections to multiple upstream switches without any additional switch configuration.
+* Balance-slb: Bond mode in OVS that takes advantage of all links in a bond and uses measured traffic load to rebalance VM traffic from highly used to less used interfaces.
+* Balance-tcp: A traffic-hashing algorithm that can split traffic between multiple links in an active-active fashion. Because the uplinks appear as a single L2 link, the algorithm can balance traffic among bond members without any regard for switch MAC address tables.
+* A virtual LAN (VLAN): A subgroup of a network, which combines multiple networking devices into a single domain and partitions them off from the rest.
+* Unmanaged networks: VMs get a direct connection to their VLAN of choice.
+* A managed network: A VLAN plus IP Address Management.

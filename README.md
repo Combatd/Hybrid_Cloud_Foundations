@@ -1015,3 +1015,14 @@ It is possible to balance traffic across bond uplinks, via one of three bond mod
 
 ### Bond Modes: active-backup
 With the active-backup bond mode, one interface in the bond carries traffic and other interfaces in the bond are used only when the active link fails. Active-backup is the simplest bond mode, easily allowing connections to multiple upstream switches without any additional switch configuration. The active-backup bond mode requires no special hardware and you can use different physical switches for redundancy.
+
+### Bond Modes: Balance-slb
+To take advantage of the bandwidth provided by multiple upstream switch links, you can use the balance-slb bond mode. The balance-slb bond mode in OVS takes advantage of all links in a bond and uses measured traffic load to rebalance VM traffic from highly used to less used interfaces.
+
+When the configurable bond-rebalance interval expires, OVS uses the measured load for each interface and the load for each source MAC hash to spread traffic evenly among links in the bond. Traffic from some source MAC hashes may move to a less active link to more evenly balance bond member utilization.
+
+Perfectly even balancing may not always be possible, depending on the number of source MAC hashes and their stream sizes. Each individual VM NIC uses only a single bond member interface at a time, but a hashing algorithm distributes multiple VM NICs’ multiple source MAC addresses across bond member interfaces.
+
+As a result, it is possible for a Nutanix AHV node with two 10 GB interfaces to use up to 20 Gbps of network throughput. Individual VM NICs have a maximum throughput of 10 Gbps, the speed of a single physical interface. A VM with multiple NICs could still have more bandwidth than the speed of a single physical interface, but there is no guarantee that the different VM NICs will land on different physical interfaces.
+
+The default rebalance interval is 10 seconds, but Nutanix recommends setting this interval to 30 seconds to avoid excessive movement of source MAC address hashes between upstream switches. Nutanix has tested this configuration using two separate upstream switches with AHV. If the upstream switches are interconnected physically or virtually, and both uplinks allow the same VLANs, no additional configuration, such as link aggregation is necessary.

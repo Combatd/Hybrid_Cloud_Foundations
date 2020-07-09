@@ -1026,3 +1026,10 @@ Perfectly even balancing may not always be possible, depending on the number of 
 As a result, it is possible for a Nutanix AHV node with two 10 GB interfaces to use up to 20 Gbps of network throughput. Individual VM NICs have a maximum throughput of 10 Gbps, the speed of a single physical interface. A VM with multiple NICs could still have more bandwidth than the speed of a single physical interface, but there is no guarantee that the different VM NICs will land on different physical interfaces.
 
 The default rebalance interval is 10 seconds, but Nutanix recommends setting this interval to 30 seconds to avoid excessive movement of source MAC address hashes between upstream switches. Nutanix has tested this configuration using two separate upstream switches with AHV. If the upstream switches are interconnected physically or virtually, and both uplinks allow the same VLANs, no additional configuration, such as link aggregation is necessary.
+
+### Bond Modes: balance-tcp
+Taking full advantage of bandwidth provided by multiple links to upstream switches, from a single VM, requires dynamically negotiated link aggregation and load balancing using balance-tcp. Nutanix recommends dynamic link aggregation with LACP instead of static link aggregation due to improved failure detection and recovery.
+
+With link aggregation negotiated by LACP, multiple links to separate physical switches appear as a single layer-2 link. A traffic-hashing algorithm such as balance-tcp can split traffic between multiple links in an active-active fashion. Because the uplinks appear as a single L2 link, the algorithm can balance traffic among bond members without any regard for switch MAC address tables. Nutanix recommends using balance-tcp when using LACP and link aggregation, because each TCP stream from a single VM can potentially use a different uplink in this configuration.
+
+With link aggregation, LACP, and balance-tcp, a single guest VM with multiple TCP streams could use up to 20 Gbps of bandwidth in an AHV node with two 10 GB adapters.

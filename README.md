@@ -1143,3 +1143,9 @@ If a host fails, the VMs that were running on that host are restarted on any ava
 The other option is using host-based reservations.
 
 In this method, the cluster is divided into segments to ensure enough space is reserved for any host failure. Each segment corresponds to the largest VM that is guaranteed to be restarted in case the failure occurs. The other factor is the number of host failures that can be tolerated. Using these inputs, the scheduler implements admission control to always have enough resources reserved so that the VMs can be restarted upon failure of any host in the cluster.
+
+### Enabling VM High Availability
+To enable VM HA, click the gear icon at the top right of the screen to open the Settings page.
+
+As you can see here, HA Reservation is disabled by default. The dialog informs you that resources are not reserved, and in case of a failure VMs will be restarted based on the amount of resources that are available to the cluster. To enable VM HA, select the Enable HA Reservation checkbox.
+The dialog updates to inform you that a certain amount of resources will be reserved to provide protection in case of a host failure. To save this change and enable VM HA, click Save.

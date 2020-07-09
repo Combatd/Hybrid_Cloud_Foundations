@@ -993,3 +993,8 @@ Nutanix AHV uses Open vSwitch, or OVS, to manage the network across all nodes in
 OVS supports many popular switch features, including VLAN tagging, Link Aggregation Control Protocol (LACP), port mirroring, and quality of service (QoS), to name a few. Each AHV node maintains an OVS instance, and all OVS instances combine to form a single logical switch. Constructs called bridges manage the switch instances residing on the AHV hosts.
 
 Let's break down some of these virtual networking components that make up Nutanix AHV.
+
+### Virtual Networking: Bridges
+Bridges act as virtual switches that manage network traffic between physical and virtual network interfaces.
+
+The default AHV configuration includes an OVS bridge called br0 and a native Linux bridge called virbr0. The virbr0 Linux bridge carries management and storage communication between the CVM and AHV host. All other storage, host, and VM network traffic flows through the br0 OVS bridge. The AHV host, VMs, and physical interfaces use ports for connectivity to the bridge. Next, let's discuss ports.

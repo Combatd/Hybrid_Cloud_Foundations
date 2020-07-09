@@ -922,3 +922,18 @@ Networking is the practice in which nodes transport and exchange data over a sha
 It is commonly associated with the design, construction, and use of a network. Networking also includes the management, maintenance, and operation of the network’s physical infrastructure. It also involves all the associated software and policies.
 
 In this lesson we’re going to be focusing on two specific topics – physical networking and virtual networking.
+
+### Introduction to Networking: Physical Networking
+Physical networking is about the network topology – the devices, their location, and the physical cables that connect those devices to each other. The network is a key component in ensuring high performance and availability, and successful deployments combine the right physical switches with the right physical designs.
+
+A Nutanix environment should use datacenter switches designed for transmitting large amounts of server and storage traffic at low latency.
+
+Datacenter switches have the following characteristics:
+
+* Line rate: Ensures that all ports can simultaneously achieve advertised throughput.
+* Low latency: Minimizes port-to-port latency, measured in microseconds or nanoseconds.
+* Large per-port buffers: Handle speed mismatch from uplinks without dropping frames.
+* Nonblocking, with low or no oversubscription: Reduces chance of drops during peak traffic periods.
+* 10 Gbps or faster links for Nutanix CVM traffic: Only use 1 Gbps links either for additional user VM traffic or when 10 Gbps connections are not available, such as in a ROBO deployment. Limit Nutanix clusters using 1 Gbps links to eight nodes.
+
+Once you’ve found the right switch, that’s one big decision dealt with. The other is which networking design to use. And whether you’re designing a new network or transitioning an older network into cloud-scale architecture, it is important to know the differences and characteristics of two prominent network topologies: Core-Aggregation-Access networking, which is also called 3-Tier networking, and Leaf-Spine architecture.

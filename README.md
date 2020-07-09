@@ -809,3 +809,12 @@ Each of these standards represents a set of considerations for the way a product
 For a system – any system – to be as protected as it can be, security needs to be built in from the ground up. This is why compliance is something you consider even before you start development. When you’re gathering requirements, determining functionality, and figuring out the sort of product that you’re going to build, you need to consider how security will affect decisions you make during development.
 
 Because of this, it’s important to understand the security development life cycle.
+
+### Security Development Life Cycle
+This is a high-level overview of the Security Development Life Cycle. It is a process with different phases that contain security activities that sits inside of the classic people-process-technology triangle. The SecDL forms the process portion.
+
+It includes both the central security team that governs the process and updates it, as well as the product or development teams that perform security activities. The technology portion consists of tools that assist in finding vulnerabilities in source code or discovering vulnerabilities in a running instance of the product or application.
+
+The SecDL is methodology-neutral. Security activities fit within any product development methodology, whether waterfall, or DevOps. Methodology differences show up in the cadence of security activities.
+
+The SecDL was developed during the time of waterfall, so it is usually portrayed as a linear process that begins with requirements and ends with the release. When the SDL is extended to agile, some security activities get integrated into the normal sprint schedule, while others are pursued out-of-band. With DevOps, activities are embedded into the build pipeline using automation, while additional activities happen outside the pipeline.

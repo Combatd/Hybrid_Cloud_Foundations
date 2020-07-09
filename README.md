@@ -1040,3 +1040,6 @@ A virtual LAN, or VLAN, is a subgroup of a network, which combines multiple netw
 VLANs offer a number of benefits over their more physical-based counterparts: Better network speed and performance More efficient traffic routing between domains More control over network devices and traffic Security benefits by isolating data within a VLAN No need to add cabling or make significant infrastructure changes
 
 AHV supports two different ways to provide VM connectivity: managed and unmanaged networks.
+
+### Unmanaged Networks
+With unmanaged networks, VMs get a direct connection to their VLAN of choice. Each virtual network in AHV maps to a single VLAN and bridge. All VLANs allowed on the physical switch port to the AHV host are available to the CVM and guest VMs. Acropolis binds each virtual network it creates to a single VLAN. During VM creation, you can create a virtual NIC and associate it with a network and VLAN. Or, you can provision multiple virtual NICs each with a single VLAN or network.

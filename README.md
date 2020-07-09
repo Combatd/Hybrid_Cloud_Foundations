@@ -1098,3 +1098,14 @@ What we’re interested in right now is the VM table, which you’re seeing here
 As you can see, with Test VM 001 selected, we now have access to a variety of different management options. You can manage Nutanix Guest Tools, Launch the VM’s console, power the VM on or off, take a snapshot, and migrate, clone, update, or delete the VM.
 
 So, now that you know how to access these options, let’s look at VM creation and management in more detail.
+
+### Working with Images
+The first step in creating virtual machines is learning how to work with images.
+
+You can use Prism to import and configure operating system ISO and disk image files using the Image Service. This image service allows you to assemble a repository of image files in different formats including raw, vhd, vhdx, vmdk, vdi, iso, and qcow2. You can later use these images when creating virtual machines.
+
+Adding an image to the image service is a fairly straightforward upload process. The upload process is performed on the Storage dashboard (not the VM dashboard). You simply select the image, name it, select the image type, and that’s it - your image is now in Prism and ready for use.
+
+After you upload an image to Prism, there are several things you can do with it. You can use it to create a VM, you can leave it in the image service for use in future deployments and, if you no longer need that image at a later date, you can simply delete it from Prism.
+
+Before we move on to an exercise in which you can practice uploading images, let’s watch a short video walkthrough of the process.

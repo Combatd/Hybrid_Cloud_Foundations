@@ -909,3 +909,16 @@ Prism includes a set of predefined roles. You can also define additional custom 
 * Went over security standards
 * Discussed the Security Development Life Cycle
 * Discussed how to secure the Hybrid Cloud
+
+## Chapter 4: Networking
+### Lesson Overview
+* Introduction to Physical and Virtual Networking
+* Components of AHV Networking
+* Working with VLANs
+
+What is Networking?
+Networking is the practice in which nodes transport and exchange data over a shared medium.
+
+It is commonly associated with the design, construction, and use of a network. Networking also includes the management, maintenance, and operation of the network’s physical infrastructure. It also involves all the associated software and policies.
+
+In this lesson we’re going to be focusing on two specific topics – physical networking and virtual networking.

@@ -844,3 +844,12 @@ DAST checks the application's runtime instantiation. It spiders through an appli
 Formal test activities include security functional test plans, vulnerability scanning, and penetration testing. Vulnerability scanning uses industry-standard tools to determine if any system-level vulnerabilities exist with the application or product.
 
 Penetration testing involves testers attempting to work around the security protections in a given application and exploit them. Penetration testing also stretches the product and exposes it to testing scenarios that automated tools cannot replicate. Because penetration testing is resource-intensive, it is usually not performed for every release.
+
+### SecDL: Update
+The findings from tests are updated as necessary and the product itself is then prepared for release.
+
+Release occurs when all the security activities are confirmed against the final build and the software is sent to customers or made available for download. After the software is released, an interface is typically provided for external customers and security researchers to report security problems in products.
+
+Part of this response interface should ideally include a product security-incident response team that focuses on triaging and communicating product vulnerabilities, both individual bugs and those that will require industry-wide collaboration such as Heartbleed, Bashbug, etc.
+
+Finally, there are other security activities are also important to the success of a SecDL, including security champions, bug bounties, and education and training.

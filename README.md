@@ -1159,3 +1159,19 @@ The dialog updates to inform you that a certain amount of resources will be rese
 ### Glossary
 * A virtual machine (or VM): An emulation of a computer system. It’s based on computer architectures, is typically called an image, and provides the functionality of a physical computer.
 * High availability: Refers to the ability of a system to run continuously without failure.
+
+## Chapter 6: Data Protection
+### Lesson Overview
+* The state of data protection
+* The complexities of data protection in a hybrid cloud world
+* Data protection trends
+* Data protection in the hybrid cloud
+
+Businesses of all sizes are modernizing IT with the goal of:
+
+* Reducing costs
+* Increasing productivity
+* Addressing digital transformation needs.
+
+However, not all businesses are paying the same amount of attention to changing requirements for data protection, nor have they made the same investments for data protection as they have for other areas of IT. At the same time, uptime and availability of critical applications is becoming increasingly important. The result is a steadily widening gap between the amount of data protection being delivered, and the level of protection needed.
+

@@ -1033,3 +1033,10 @@ Taking full advantage of bandwidth provided by multiple links to upstream switch
 With link aggregation negotiated by LACP, multiple links to separate physical switches appear as a single layer-2 link. A traffic-hashing algorithm such as balance-tcp can split traffic between multiple links in an active-active fashion. Because the uplinks appear as a single L2 link, the algorithm can balance traffic among bond members without any regard for switch MAC address tables. Nutanix recommends using balance-tcp when using LACP and link aggregation, because each TCP stream from a single VM can potentially use a different uplink in this configuration.
 
 With link aggregation, LACP, and balance-tcp, a single guest VM with multiple TCP streams could use up to 20 Gbps of bandwidth in an AHV node with two 10 GB adapters.
+
+### VLAN
+A virtual LAN, or VLAN, is a subgroup of a network, which combines multiple networking devices into a single domain and partitions them off from the rest.
+
+VLANs offer a number of benefits over their more physical-based counterparts: Better network speed and performance More efficient traffic routing between domains More control over network devices and traffic Security benefits by isolating data within a VLAN No need to add cabling or make significant infrastructure changes
+
+AHV supports two different ways to provide VM connectivity: managed and unmanaged networks.

@@ -898,3 +898,8 @@ Once deployed, STIGs lock down IT environments and reduce security vulnerabiliti
 Data-at-Rest Encryption secures data while at rest using self-encrypting drives and key-based access management. For customers who require enhanced data security, Nutanix provides a software-only encryption option for data-at-rest security which does not require self-encrypting drives.
 
 With Nutanix’s Data-at-Rest Encryption implementation data is encrypted on all drives at all times, data is inaccessible in the event of drive or node theft, data on a drive can be securely destroyed, protection can be enabled or disabled at any time, and no performance penalty is incurred despite encrypting all data.
+
+### Role-Based Access Control
+The last security capacity that we’re going to discuss in this lesson is role-based access control. Prism supports role-based access control that you can configure to provide customized access permissions to users based on their assigned roles. The roles dashboard allows you to view information about all defined roles and the users and groups assigned to those roles.
+
+Prism includes a set of predefined roles. You can also define additional custom roles. Configuring authentication confers default user permissions that vary depending on the type of authentication like full permissions from a directory service, or no permissions from an identity provider. You can configure role maps to customize these user permissions. Finally, you can refine access permissions even further by assigning roles to individual users or groups that apply to a specified set of entities.

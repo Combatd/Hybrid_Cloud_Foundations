@@ -961,3 +961,10 @@ Essentially, when using Core-Aggregation-Access, you need to ensure that all nod
 Scaling the three-tier network design may require adding another aggregation and access layer to the core. In this case, there would be more than three switch hops between the two access layers. To continue to align with the three-switch-hop rule, ensure that you add Nutanix nodes in separate aggregation and access layers to separate clusters. In the example you’re seeing here, Cluster 1 connects to one aggregation layer and Cluster 2 connects to another.
 
 However, since there are many ways to connect switches in the core-aggregation-access design, your deployment may look a little different from this one.
+
+### Physical Networking Topology: Leaf-Spine
+The leaf-spine network design is popular in new datacenter deployments because it’s easy to deploy and easy to scale after deployment. A leaf-spine topology requires at least two spine switches and two leaf switches. Every leaf connects to every spine using uplink ports. There are no connections between the spine switches or between the leaf switches in the conventional leaf-spine design. This architecture maintains consistent performance without any reduction in throughput.
+
+Spine switches contain the routing, switching, and network services required for core network functions. Leaf switches exclusively provide high port density for network communications and extend the network configuration of the core out to the endpoints. Leaf-Spine switching focuses on east-west traffic, capitalizing on the fact that a majority of network communication now relies upon communication within the LAN to other adjacent servers and services. Spine leaf provides a high-bandwidth, low latency alternative to 3-tiered architecture, as any given network node is simply one hop away from any adjacent node through the leaf switches.
+
+Spine and leaf architecture provides consolidated management and scale-out networking in a simplified network design. Scaling the architecture normally involves adding a single leaf, enabling the new switch in the fabric, and then cabling the endpoints as needed.

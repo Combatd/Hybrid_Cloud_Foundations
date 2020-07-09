@@ -883,3 +883,6 @@ Cluster lockdown is the ability to disable password-based CVM access and/or only
 However, you can add your public SSH-key via Prism and still login via SSH by using your ssh key. This adds a layer of non-repudiation to the connection, since the key used to access the emergency account on the shell is logged. This adds a layer of cryptographic exchange to the connection instead of just a source IP.
 
 All CVMs have a set of ssh-keys that are generated at installation, so all CVMs in a cluster can still communicate with each other using keys,and you can ssh between them using keys once you gain access.
+
+### Key Management and Administration
+Nutanix nodes are authenticated by a key management server, or KMS. SEDs generate new encryption keys, which are uploaded to the KMS. In the event of power failure or a reboot, keys are retrieved from the KMS and used to unlock the SEDs. These security keys can also be instantly reprogrammed. And finally, Crypto Erase can be used to instantly erase all data on an SED while generating a new key.

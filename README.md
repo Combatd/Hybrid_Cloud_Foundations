@@ -971,3 +971,14 @@ Spine and leaf architecture provides consolidated management and scale-out netwo
 
 ### Leaf Spine: Using Leaf-Spine in a Nutanix Deployment
 Nutanix recommends a leaf-spine network architecture to ensure true linear scaling. Other best practices include using uplinks that are a higher speed than the edge ports to reduce uplink oversubscription. To increase uplink capacity, add spine switches or uplink ports as needed.
+
+### Introduction to Networking: Virtual Networking
+To understand virtual networking, we need to first take a quick step back and understand network virtualization. And although they sound similar – and that’s because they’re related – they do mean slightly different things.
+
+Network virtualization involves combining hardware and software network resources, along with network functionality, into a single, software-based administrative entity. The elements that can be combined include switches, network adapters, firewalls, load balancers, virtual LANs, and so on. The outcomes of this – the single, software-based entity – is a virtual network.
+
+And virtual networking, to put it very simply, facilitates communication between virtual machines. It’s based on physical networking principles, but its functions are software-driven. For example, a virtual switch contains the same packet forwarding logic that a physical switch does, but as software.
+
+There are four major components that we need to talk about: virtual switches, bridges, ports, and bonds.
+
+This virtual switch controls and directs communication between the existing physical network and virtual parts of the network, like virtual machines. A virtual network adapter allows VMs to connect to a network, and allows the VMs on a LAN to connect to a larger network as well.

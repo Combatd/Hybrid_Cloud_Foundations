@@ -1114,3 +1114,10 @@ Before we move on to an exercise in which you can practice uploading images, let
 Managing VMs involves a handful of tasks. Now, specifically, we’re going to be focusing on a few of them. Let’s start with modification. You can update or modify a VM at any point after you create it. And, you have access to the same dialog that’s used when creating a VM, so you can modify everything from CPU, memory, and storage to networking and host affinity details.
 
 On the update VM dialog, change the VM’s configuration to suit your needs. In this case, we’ve updated the number of cores per vCPU to 2, and the memory from 8 GB to 16. When all your changes have been made, click Save.
+
+### Cloning a VM
+To clone a VM select it and then, from the row of option below the VM table, select Clone.
+
+In the Clone VM dialog, you can change the configuration as required and specify the number of clones you want. If you want to create more than one clone – if you look at this example, we’re creating five – then you’ll also be prompted to specify a starting index number.
+
+Once you’ve made all of your changes, click Save and your VM clones will be created.

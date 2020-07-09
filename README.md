@@ -1121,3 +1121,8 @@ To clone a VM select it and then, from the row of option below the VM table, sel
 In the Clone VM dialog, you can change the configuration as required and specify the number of clones you want. If you want to create more than one clone – if you look at this example, we’re creating five – then you’ll also be prompted to specify a starting index number.
 
 Once you’ve made all of your changes, click Save and your VM clones will be created.
+
+### Deleting a VM
+Deleting a VM is as straightforward as it sounds. Simply select the VM you want to delete and, from the row of options below the VM table,select Delete.
+
+You’ll be prompted to confirm deletion. If the VM is powered on, as is the case here, the dialog will explicitly state that. You’ll also be asked if you want to delete all snapshots of this VM. Make your selections and, once you’re sure, click Delete to remove the VM from Prism.

@@ -1132,3 +1132,14 @@ Like a lot of the capabilities we’ve talked about already, migrating a VM to a
 On the Migrate VM screen, click the dropdown and select the host that you want to migrate to.
 Here, we have 3 options – Demo 1, Demo 2, and the host that the VM is already on, Demo 3. Let’s move the VM to Demo 2. To do this, we just need to select DEMO-AHV-2 from the list and click Migrate.
 Prism will take a few seconds to complete the process and, once it finishes, we can see the results. In the column to the right of the VM name, we can see that our test VM is now on DEMO-AHV-2.
+
+### What is VM High Availability?
+High availability refers to the ability of a system to run continuously without failure. This doesn’t mean that the system or components of it cannot fail; It just means that the system is designed to account for and compensate for failures when they happen. And, since VMs represent the interface with which end users interact with a virtualized system, being able to provide high uptime and strong tolerance for failure is especially important.
+
+By default, Nutanix uses a system called best effort availability for VMs. Other options are available and can be manually turned on, but this one is on by default.
+
+If a host fails, the VMs that were running on that host are restarted on any available space on other hosts in the cluster. One the failed host is up and running, VMs are migrated back to their original host. This type of VM high availability is implemented without reserving any resources. But because admission control is not enforced, there may not be enough resources to restart all VMs.
+
+The other option is using host-based reservations.
+
+In this method, the cluster is divided into segments to ensure enough space is reserved for any host failure. Each segment corresponds to the largest VM that is guaranteed to be restarted in case the failure occurs. The other factor is the number of host failures that can be tolerated. Using these inputs, the scheduler implements admission control to always have enough resources reserved so that the VMs can be restarted upon failure of any host in the cluster.

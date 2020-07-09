@@ -795,3 +795,17 @@ The second component is the Evaluation Assurance Level, which – as the name su
 Leveraging the public cloud doesn’t mean you give up all control over security. There are still measures that you can implement, but they only go so far. In practice, you’ll find that you can control and secure about 80% of a public cloud’s capabilities. While that is a considerable amount of control, it does still mean that roughly 20% is left to the cloud provider and their security measures. Most public cloud providers do an excellent job of securing that 20%, but that doesn’t mean breaches are an impossibility.
 
 On the other hand, with the private cloud, you have full control over your security. That means you can potentially be more secure than the public cloud but, simply having an on-prem setup doesn’t bolster security by itself. That is one of the reasons that these security standards are so important. They represent a benchmark against which you can measure your own security profile, determine what areas of your environment are well set up and which ones are in need of some tightening. Your on-prem cloud is only as secure as the products you use to build your technology stack. This is why security needs to be built into those products from the ground up.
+
+### Securing Clouds from the Ground Up
+
+Toggle Sidebar
+Securing Clouds from the Ground Up
+Securing Clouds from the Ground Up
+
+Why are the standards we just talked about are so important?
+
+Each of these standards represents a set of considerations for the way a product is conceptualized, designed, programmed, and tested - and ultimately determines who it can be sold to. These considerations aren’t things that can be bolted on at the last minute.
+
+For a system – any system – to be as protected as it can be, security needs to be built in from the ground up. This is why compliance is something you consider even before you start development. When you’re gathering requirements, determining functionality, and figuring out the sort of product that you’re going to build, you need to consider how security will affect decisions you make during development.
+
+Because of this, it’s important to understand the security development life cycle.

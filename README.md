@@ -1126,3 +1126,9 @@ Once you’ve made all of your changes, click Save and your VM clones will be cr
 Deleting a VM is as straightforward as it sounds. Simply select the VM you want to delete and, from the row of options below the VM table,select Delete.
 
 You’ll be prompted to confirm deletion. If the VM is powered on, as is the case here, the dialog will explicitly state that. You’ll also be asked if you want to delete all snapshots of this VM. Make your selections and, once you’re sure, click Delete to remove the VM from Prism.
+
+### Migrating a VM
+Like a lot of the capabilities we’ve talked about already, migrating a VM to a different host in the cluster also a one-click operation. If you need to migrate a VM, you can either choose the host yourself, or allow Prism to do it for you. Since the former is extremely straightforward, let’s look at a quick example of the latter.
+On the Migrate VM screen, click the dropdown and select the host that you want to migrate to.
+Here, we have 3 options – Demo 1, Demo 2, and the host that the VM is already on, Demo 3. Let’s move the VM to Demo 2. To do this, we just need to select DEMO-AHV-2 from the list and click Migrate.
+Prism will take a few seconds to complete the process and, once it finishes, we can see the results. In the column to the right of the VM name, we can see that our test VM is now on DEMO-AHV-2.

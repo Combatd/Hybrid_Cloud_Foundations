@@ -1012,3 +1012,6 @@ Ports are logical constructs created in a bridge that represent connectivity to 
 
 ### Virtual Networking: Bonds
 It is possible to balance traffic across bond uplinks, via one of three bond modes: active-backup, balance-slb, and LCAP with balance-tcp. Let’s take a quick look at each of these bond modes next.
+
+### Bond Modes: active-backup
+With the active-backup bond mode, one interface in the bond carries traffic and other interfaces in the bond are used only when the active link fails. Active-backup is the simplest bond mode, easily allowing connections to multiple upstream switches without any additional switch configuration. The active-backup bond mode requires no special hardware and you can use different physical switches for redundancy.

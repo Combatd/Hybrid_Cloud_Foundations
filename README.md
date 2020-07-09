@@ -818,3 +818,8 @@ It includes both the central security team that governs the process and updates 
 The SecDL is methodology-neutral. Security activities fit within any product development methodology, whether waterfall, or DevOps. Methodology differences show up in the cadence of security activities.
 
 The SecDL was developed during the time of waterfall, so it is usually portrayed as a linear process that begins with requirements and ends with the release. When the SDL is extended to agile, some security activities get integrated into the normal sprint schedule, while others are pursued out-of-band. With DevOps, activities are embedded into the build pipeline using automation, while additional activities happen outside the pipeline.
+
+### SecDL: Analyze
+The first phase is essentially requirements gathering. In this phase, the goal is to defined the security best practices that will be integrated into a product. These practices may come from industry standards or be based on responses to problems that have occurred in the past. Requirements exist to define the functional security requirements implemented in the product, and include all the activities of the SDL. They are used as an enforcement point to ensure that all pieces are properly considered.
+
+Requirements may take the classic form, stating that the product or application must, can, or should, do something. An example might be that the product must enforce a minimum password length of eight characters. In the agile world, requirements are expressed as user stories. These stories contain the same information as do the requirements, but security functionality is written from the user's perspective.

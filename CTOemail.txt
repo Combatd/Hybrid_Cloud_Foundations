@@ -1,0 +1,123 @@
+Dear CTO
+
+Thank you for your email. You requested a Project with the following:
+
+- 3 Tier Application Stack
+    * Database Server VM
+    * Application Server VM
+    * Web Server VM
+
+- Separate Environments for Production and Development
+    * Requires built-in data protection using backup/restore with snapshots and no more than 1 hour of data loss after a failure
+    * Additional tests for VM workload expansion (cloning), the ability to dynamically add CPU/Memory resources to online virtual machines (add 1 vCPU and 2GB memory to the database server) is required.
+    * Final verification is the removal of a key VM and performing a full restoration.
+
+
+
+
+The Network Operations Team gave me these configurations:
+
+- Separate Production and Development Networks
+    * Production network will be managed using IPAM/DHCP from an IP Pool provided by the Network Operations group
+    * The production network will be on vlan 0, using the 172.31.0.0/24 network.
+    * The IP Pool will use a Start address of 172.31.0.210 and an End address of 172.31.0.230.
+    * The development network will be unmanaged on VLAN 101 using the 172.31.101.0/24 network.
+
+
+
+
+The Systems Administrator gave me these Requirements:
+
+- Microsoft SQL on Windows for the Database Tier (Windows)
+- Application Server, Web Server Tiers are both Linux Based (CentOS)
+- Each Virtual Machine will have 1 vCPU with 4 GB of RAM/memory
+
+
+
+I was able to perform the following tasks:
+
+1) Created VMs using the disk images for CentOS and Windows in "Image Configuration" using files CentOS.qcow2 and Windows.qcow2 from , which would be used on the Virtual Machines
+    * CentOS has an annotation of Linux Machine
+    * Windows has an annotation of Windows Machine
+
+2) Setup Production Network on Start 172.31.0.210, End 172.31.0.230
+    * In "Network Configuration" a Production Network with a VLAN ID 0 was created, with "Configure Domain Name" the IP  pool of Start Address 172.31.0.210 End Address 172.31.0.230
+    * The Production Network still in "Create Network" phase was given Network IP Address/Prefix Length 172/31.0.0/24 network.
+
+3) Setup Development Network with VLAN ID of 101 under "Network Configuration"
+    * With Enable IP address management checked, Network IP Address/Prefix Length set to 172.31.101.0/24
+    * Configure Domain Settings is Unchecked
+
+
+4) Went to Create VM to setup our servers. As requested, 3 tiers for web, app, and database was created.
+
+    - Created VM for App Production with vCPUs 1, Cores 2, and Memory (RAM) 4 GiB.
+    - Added a Disk of Type Disk, Clone from Image Service Operation, Bus Type IDE, using Image of CentOS
+    - For "Boot Configuration" Boot Priority was DISK (ide.1)
+    - For Network Adapters (NIC), it was set to Production Network
+
+    - VM for Web Production with vCPUs 1, Cores 2, and Memory (RAM) 4 GiB.
+    - Added a Disk of Type Disk, Clone from Image Service Operation, Bus Type IDE, CentOS Image
+    - "Boot Configuration" Legacy BIOS Boot Priority set to DISK (ide.1)
+    - Network Adapters (NIC) was set to Production Network
+    - VM Host Affinity with "Select Hosts" for 172.30.0.4
+
+    - Created VM for Database Production with vCPUs 1, Cores 2, and Memory (RAM) 2 GiB.
+    - Added a Disk of Type Disk, Clone from Image Service Operation, Bus Type IDE, using Image of Windows
+    - "Boot Configuration" Legacy BIOS Boot Priority set to DISK (ide.1)
+    - Network Adapters (NIC) was set to Production Network
+    - VM Host Affinity with "Select Hosts" for 172.30.0.4
+
+5) With Web, App, and DB Production servers created, then I had to Create Web, App, and DB VMs for Development Purposes
+
+    - Go to VM Dashboard to see the list of all VMs
+
+    - Clicked "Clone VM" for DB Production
+    - For db_dev (Database Development), Network Adapters (NIC) set to Development Network
+    - DB Dev IP Address set to 172.31.101.1 with VLAN id of 101
+
+    - Clicked "Clone VM" for web_prod (Web Production)
+    - For web_dev (Web Development), Network Adapters (NIC) set to Development Network
+    - web_dev IP Address set to 172.31.101.2 with VLAN ID 101
+
+    - Clicked "Clone VM" for app_prod (app production)
+    - For app_dev (App Development), Network Adapters (NIC) set to Development Network
+    - app_dev IP Address set to 172.31.101.3 with VLAN ID 101
+
+6) With both Production and Development VMs created, it was time to implement the Data Protection Plan.
+
+    - Go to Data Protection
+
+    - Clicked "Protection Domain"
+    - Name Protection Domain "production_vm_protection" 
+    - Add Web, App, Database Production to Protected Entities (app_prod, db_prod, web_prod)
+    - Set a new Schedule for the production_vm_protection Domain
+        * Local Schedule starting immediately, Repeat Every 1 hour for Snapshot
+    
+7) With Protection Domain setup, removal of a VM and a full restoration was necessary for testing.
+
+    - Go to VM Dashboard, where we can delete one of our production VMs
+    - Selected "db_prod" (Database Production) and deleted it by clicking "Delete"
+    
+    - Go back to Data Protection Dashboard
+    - Select most recent Snapshot and click "restore"
+    - Select the db_prod entity that was deleted, and "Create New Entities"
+    
+    - Go back to VM Dashboard
+    - A recreated database with a name "Nutanix-Clone db_prod" was created.
+
+8) I was able to create an Excel Spreadsheet ".xls" file with the proper configurations.
+
+
+
+- NTP set for public service pool.ntp.org
+- 8.8.8.8 set for DNS Domain Name Service
+- vCPUs, Cores, Memory can be added and configured
+- Snapshots can be restored thanks to Protection Plan Snapshot every 1 hour
+
+
+Please reach out if you have any other questions or concerns,
+
+Sincerely,
+
+Mark Calvelo
